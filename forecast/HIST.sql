@@ -1,0 +1,4078 @@
+CREATE TABLE FCST
+(
+  DMDUNIT             VARCHAR(50)         NOT NULL,
+  DMDGROUP            VARCHAR(50)         NOT NULL,
+  LOC                 VARCHAR(50)         NOT NULL,
+  STARTDATE           DATE                      NOT NULL,
+  TYPE                INT                    NOT NULL,
+  FCSTID              VARCHAR(50)         NOT NULL,
+  QTY                 FLOAT(10)                                    NOT NULL,
+  MODEL               VARCHAR(18)                          NOT NULL,
+  LEWMEANQTY          FLOAT(10)                               NOT NULL,
+  MARKETMGRVERSIONID  INT(38)                                NOT NULL,
+  DUR                 INT                                NOT NULL
+);
+
+CREATE TABLE FCST
+(
+  DMDUNIT     VARCHAR(50)                 NOT NULL,
+  DMDGROUP    VARCHAR(50)                 NOT NULL,
+  LOC         VARCHAR(50)                 NOT NULL,
+  STARTDATE   DATE                        NOT NULL,
+  TYPE        INT                         NOT NULL,
+  FCSTID      VARCHAR(50)                 ,
+  MODEL       VARCHAR(50)                 NOT NULL,
+  LEWMEANQTY  FLOAT,
+  MARKETMGRVERSIONID  INT                 ,
+  DUR         INT, 
+  PERIOD1     FLOAT,
+  PERIOD2     FLOAT,
+  PERIOD3     FLOAT,
+  PERIOD4     FLOAT,
+  PERIOD5     FLOAT,
+  PERIOD6     FLOAT,
+  PERIOD7     FLOAT,
+  PERIOD8     FLOAT,
+  PERIOD9     FLOAT,
+  PERIOD10    FLOAT,
+  PERIOD11    FLOAT,
+  PERIOD12    FLOAT,
+  PERIOD13    FLOAT,
+  PERIOD14    FLOAT,
+  PERIOD15    FLOAT,
+  PERIOD16    FLOAT,
+  PERIOD17    FLOAT,
+  PERIOD18    FLOAT,
+  PERIOD19    FLOAT,
+  PERIOD20    FLOAT,
+  PERIOD21    FLOAT,
+  PERIOD22    FLOAT,
+  PERIOD23    FLOAT,
+  PERIOD24    FLOAT,
+  PERIOD25    FLOAT,
+  PERIOD26    FLOAT,
+  PERIOD27    FLOAT,
+  PERIOD28    FLOAT,
+  PERIOD29    FLOAT,
+  PERIOD30    FLOAT,
+  PERIOD31    FLOAT,
+  PERIOD32    FLOAT,
+  PERIOD33    FLOAT,
+  PERIOD34    FLOAT,
+  PERIOD35    FLOAT,
+  PERIOD36    FLOAT,
+  PERIOD37    FLOAT,
+  PERIOD38    FLOAT,
+  PERIOD39    FLOAT,
+  PERIOD40    FLOAT,
+  PERIOD41    FLOAT,
+  PERIOD42    FLOAT,
+  PERIOD43    FLOAT,
+  PERIOD44    FLOAT,
+  PERIOD45    FLOAT,
+  PERIOD46    FLOAT,
+  PERIOD47    FLOAT,
+  PERIOD48    FLOAT,
+  PERIOD49    FLOAT,
+  PERIOD50    FLOAT,
+  PERIOD51    FLOAT,
+  PERIOD52    FLOAT,
+  PERIOD53    FLOAT,
+  PERIOD54    FLOAT,
+  PERIOD55    FLOAT,
+  PERIOD56    FLOAT,
+  PERIOD57    FLOAT,
+  PERIOD58    FLOAT,
+  PERIOD59    FLOAT,
+  PERIOD60    FLOAT,
+  PERIOD61    FLOAT,
+  PERIOD62    FLOAT,
+  PERIOD63    FLOAT,
+  PERIOD64    FLOAT,
+  PERIOD65    FLOAT,
+  PERIOD66    FLOAT,
+  PERIOD67    FLOAT,
+  PERIOD68    FLOAT,
+  PERIOD69    FLOAT,
+  PERIOD70    FLOAT,
+  PERIOD71    FLOAT,
+  PERIOD72    FLOAT,
+  PERIOD73    FLOAT,
+  PERIOD74    FLOAT,
+  PERIOD75    FLOAT,
+  PERIOD76    FLOAT,
+  PERIOD77    FLOAT,
+  PERIOD78    FLOAT,
+  PERIOD79    FLOAT,
+  PERIOD80    FLOAT,
+  PERIOD81    FLOAT,
+  PERIOD82    FLOAT,
+  PERIOD83    FLOAT,
+  PERIOD84    FLOAT,
+  PERIOD85    FLOAT,
+  PERIOD86    FLOAT,
+  PERIOD87    FLOAT,
+  PERIOD88    FLOAT,
+  PERIOD89    FLOAT,
+  PERIOD90    FLOAT,
+  PERIOD91    FLOAT,
+  PERIOD92    FLOAT,
+  PERIOD93    FLOAT,
+  PERIOD94    FLOAT,
+  PERIOD95    FLOAT,
+  PERIOD96    FLOAT,
+  PERIOD97    FLOAT,
+  PERIOD98    FLOAT,
+  PERIOD99    FLOAT,
+  PERIOD100   FLOAT,
+  PERIOD101   FLOAT,
+  PERIOD102   FLOAT,
+  PERIOD103   FLOAT,
+  PERIOD104   FLOAT
+  );
+
+CREATE TABLE HIST
+(
+  DMDUNIT     VARCHAR(50)                 NOT NULL,
+  DMDGROUP    VARCHAR(50)                 NOT NULL,
+  LOC         VARCHAR(50)                 NOT NULL,
+  STARTDATE   DATE                        NOT NULL,
+  EVENT       VARCHAR(50)                 NOT NULL,
+  HISTSTREAM  VARCHAR(18)                 NOT NULL,
+  TYPE        INT                       NOT NULL,
+  PERIOD1     FLOAT,
+  PERIOD2     FLOAT,
+  PERIOD3     FLOAT,
+  PERIOD4     FLOAT,
+  PERIOD5     FLOAT,
+  PERIOD6     FLOAT,
+  PERIOD7     FLOAT,
+  PERIOD8     FLOAT,
+  PERIOD9     FLOAT,
+  PERIOD10    FLOAT,
+  PERIOD11    FLOAT,
+  PERIOD12    FLOAT,
+  PERIOD13    FLOAT,
+  PERIOD14    FLOAT,
+  PERIOD15    FLOAT,
+  PERIOD16    FLOAT,
+  PERIOD17    FLOAT,
+  PERIOD18    FLOAT,
+  PERIOD19    FLOAT,
+  PERIOD20    FLOAT,
+  PERIOD21    FLOAT,
+  PERIOD22    FLOAT,
+  PERIOD23    FLOAT,
+  PERIOD24    FLOAT,
+  PERIOD25    FLOAT,
+  PERIOD26    FLOAT,
+  PERIOD27    FLOAT,
+  PERIOD28    FLOAT,
+  PERIOD29    FLOAT,
+  PERIOD30    FLOAT,
+  PERIOD31    FLOAT,
+  PERIOD32    FLOAT,
+  PERIOD33    FLOAT,
+  PERIOD34    FLOAT,
+  PERIOD35    FLOAT,
+  PERIOD36    FLOAT,
+  PERIOD37    FLOAT,
+  PERIOD38    FLOAT,
+  PERIOD39    FLOAT,
+  PERIOD40    FLOAT,
+  PERIOD41    FLOAT,
+  PERIOD42    FLOAT,
+  PERIOD43    FLOAT,
+  PERIOD44    FLOAT,
+  PERIOD45    FLOAT,
+  PERIOD46    FLOAT,
+  PERIOD47    FLOAT,
+  PERIOD48    FLOAT,
+  PERIOD49    FLOAT,
+  PERIOD50    FLOAT,
+  PERIOD51    FLOAT,
+  PERIOD52    FLOAT,
+  PERIOD53    FLOAT,
+  PERIOD54    FLOAT,
+  PERIOD55    FLOAT,
+  PERIOD56    FLOAT,
+  PERIOD57    FLOAT,
+  PERIOD58    FLOAT,
+  PERIOD59    FLOAT,
+  PERIOD60    FLOAT,
+  PERIOD61    FLOAT,
+  PERIOD62    FLOAT,
+  PERIOD63    FLOAT,
+  PERIOD64    FLOAT,
+  PERIOD65    FLOAT,
+  PERIOD66    FLOAT,
+  PERIOD67    FLOAT,
+  PERIOD68    FLOAT,
+  PERIOD69    FLOAT,
+  PERIOD70    FLOAT,
+  PERIOD71    FLOAT,
+  PERIOD72    FLOAT,
+  PERIOD73    FLOAT,
+  PERIOD74    FLOAT,
+  PERIOD75    FLOAT,
+  PERIOD76    FLOAT,
+  PERIOD77    FLOAT,
+  PERIOD78    FLOAT,
+  PERIOD79    FLOAT,
+  PERIOD80    FLOAT,
+  PERIOD81    FLOAT,
+  PERIOD82    FLOAT,
+  PERIOD83    FLOAT,
+  PERIOD84    FLOAT,
+  PERIOD85    FLOAT,
+  PERIOD86    FLOAT,
+  PERIOD87    FLOAT,
+  PERIOD88    FLOAT,
+  PERIOD89    FLOAT,
+  PERIOD90    FLOAT,
+  PERIOD91    FLOAT,
+  PERIOD92    FLOAT,
+  PERIOD93    FLOAT,
+  PERIOD94    FLOAT,
+  PERIOD95    FLOAT,
+  PERIOD96    FLOAT,
+  PERIOD97    FLOAT,
+  PERIOD98    FLOAT,
+  PERIOD99    FLOAT,
+  PERIOD100   FLOAT,
+  PERIOD101   FLOAT,
+  PERIOD102   FLOAT,
+  PERIOD103   FLOAT,
+  PERIOD104   FLOAT
+  );
+
+CREATE TABLE HIST
+(
+  DMDUNIT     VARCHAR(50)                 NOT NULL,
+  DMDGROUP    VARCHAR(50)                 NOT NULL,
+  LOC         VARCHAR(50)                 NOT NULL,
+  STARTDATE   DATE                        NOT NULL,
+  TYPE        INT                      NOT NULL,
+  EVENT       VARCHAR(50)                 NOT NULL,
+  QTY         FLOAT(10)                  NOT NULL,
+  HISTSTREAM  VARCHAR(18)                 NOT NULL,
+  DUR         INT                      NOT NULL
+);
+
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-04-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-11-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-18-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-25-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-01-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-08-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-15-2015', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-22-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-29-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-06-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-13-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-20-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-27-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-03-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-10-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-17-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-24-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-31-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-07-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-14-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-21-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-28-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-05-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-12-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-19-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-26-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-02-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-09-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-16-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-23-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-30-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-07-2015', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-14-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-21-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-28-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-04-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-11-2016', 1, 
+    ' ', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-18-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-25-2016', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-01-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-08-2016', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-15-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-22-2016', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-29-2016', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-07-2016', 1, 
+    ' ', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-14-2016', 1, 
+    ' ', 4500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-21-2016', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-28-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-04-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-11-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-18-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-25-2016', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-02-2016', 1, 
+    ' ', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-02-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-09-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-16-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-23-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-30-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-06-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-13-2016', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-20-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '06-27-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-04-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-11-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-18-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '07-25-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-01-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-08-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-15-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-22-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '08-29-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-05-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-12-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-19-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '09-26-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-03-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-10-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-17-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-24-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '10-31-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-07-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-14-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-21-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '11-28-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-05-2016', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-12-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-19-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '12-26-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-02-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-09-2017', 1, 
+    'A', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-16-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-23-2017', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '01-30-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-06-2017', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-13-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-20-2017', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '02-27-2017', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-06-2017', 1, 
+    'A', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-13-2017', 1, 
+    'A', 4500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-20-2017', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '03-27-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-03-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-10-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-17-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '04-24-2017', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'EDC', '05-01-2017', 1, 
+    'A', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-04-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-11-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-18-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-25-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-01-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-08-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-15-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-22-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-29-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-06-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-13-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-20-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-27-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-03-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-10-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-17-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-24-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-31-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-07-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-14-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-21-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-28-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-05-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-12-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-19-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-26-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-02-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-09-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-16-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-23-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-30-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-07-2015', 1, 
+    ' ', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-14-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-21-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-28-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-04-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-11-2016', 1, 
+    ' ', 4500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-18-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-25-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-01-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-08-2016', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-15-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-22-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-29-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-07-2016', 1, 
+    ' ', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-14-2016', 1, 
+    ' ', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-21-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-28-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-04-2016', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-11-2016', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-18-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-25-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-02-2016', 1, 
+    ' ', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-02-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-09-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-16-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-23-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-30-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-06-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-13-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-20-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '06-27-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-04-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-11-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-18-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '07-25-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-01-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-08-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-15-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-22-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '08-29-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-05-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-12-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-19-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '09-26-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-03-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-10-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-17-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-24-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '10-31-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-07-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-14-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-21-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '11-28-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-05-2016', 1, 
+    'A', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-12-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-19-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '12-26-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-02-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-09-2017', 1, 
+    'A', 4500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-16-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-23-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '01-30-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-06-2017', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-13-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-20-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '02-27-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-06-2017', 1, 
+    'A', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-13-2017', 1, 
+    'A', 4600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-20-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '03-27-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-03-2017', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-10-2017', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-17-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '04-24-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2001', 'ALL', 'WDC', '05-01-2017', 1, 
+    'A', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-04-2015', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-11-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-18-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-25-2015', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-01-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-08-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-15-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-22-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-29-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-06-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-13-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-20-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-27-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-03-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-10-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-17-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-24-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-31-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-07-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-14-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-21-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-28-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-05-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-12-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-19-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-26-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-02-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-09-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-16-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-23-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-30-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-07-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-14-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-21-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-28-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-04-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-11-2016', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-18-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-25-2016', 1, 
+    ' ', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-01-2016', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-08-2016', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-15-2016', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-22-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-29-2016', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-07-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-14-2016', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-21-2016', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-28-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-04-2016', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-11-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-18-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-25-2016', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-02-2016', 1, 
+    ' ', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-02-2016', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-09-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-16-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-23-2016', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-30-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-06-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-13-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-20-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '06-27-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-04-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-11-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-18-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '07-25-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-01-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-08-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-15-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-22-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '08-29-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-05-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-12-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-19-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '09-26-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-03-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-10-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-17-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-24-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '10-31-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-07-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-14-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-21-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '11-28-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-05-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-12-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-19-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '12-26-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-02-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-09-2017', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-16-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-23-2017', 1, 
+    'A', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '01-30-2017', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-06-2017', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-13-2017', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-20-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '02-27-2017', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-06-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-13-2017', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-20-2017', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '03-27-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-03-2017', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-10-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-17-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '04-24-2017', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'EDC', '05-01-2017', 1, 
+    'A', 700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-04-2015', 1, 
+    ' ', 2400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-11-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-18-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-25-2015', 1, 
+    ' ', 2400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-01-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-08-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-15-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-22-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-29-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-06-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-13-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-20-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-27-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-03-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-10-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-17-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-24-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-31-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-07-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-14-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-21-2015', 1, 
+    ' ', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-28-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-05-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-12-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-19-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-26-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-02-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-09-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-16-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-23-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-30-2015', 1, 
+    ' ', 2600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-07-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-14-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-21-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-28-2015', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-04-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-11-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-18-2016', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-25-2016', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-01-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-08-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-15-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-22-2016', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-29-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-07-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-14-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-21-2016', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-28-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-04-2016', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-11-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-18-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-25-2016', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-02-2016', 1, 
+    ' ', 600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-02-2016', 1, 
+    'A', 2400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-09-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-16-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-23-2016', 1, 
+    'A', 2400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-30-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-06-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-13-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-20-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '06-27-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-04-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-11-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-18-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '07-25-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-01-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-08-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-15-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-22-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '08-29-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-05-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-12-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-19-2016', 1, 
+    'A', 4200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '09-26-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-03-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-10-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-17-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-24-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '10-31-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-07-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-14-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-21-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '11-28-2016', 1, 
+    'A', 2600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-05-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-12-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-19-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '12-26-2016', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-02-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-09-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-16-2017', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-23-2017', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '01-30-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-06-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-13-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-20-2017', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '02-27-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-06-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-13-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-20-2017', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '03-27-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-03-2017', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-10-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-17-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '04-24-2017', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2002', 'ALL', 'WDC', '05-01-2017', 1, 
+    'A', 600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-04-2015', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-11-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-18-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-25-2015', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-01-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-08-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-15-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-22-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-29-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-06-2015', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-13-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-20-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-27-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-03-2015', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-10-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-17-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-24-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-31-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-07-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-14-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-21-2015', 1, 
+    ' ', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-28-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-05-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-12-2015', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-19-2015', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-26-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-02-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-09-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-16-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-23-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-30-2015', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-07-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-14-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-21-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-28-2015', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-04-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-11-2016', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-18-2016', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-25-2016', 1, 
+    ' ', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-01-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-08-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-15-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-22-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-29-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-07-2016', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-14-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-21-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-28-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-04-2016', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-11-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-18-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-25-2016', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-02-2016', 1, 
+    ' ', 600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-02-2016', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-09-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-16-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-23-2016', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-30-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-06-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-13-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-20-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '06-27-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-04-2016', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-11-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-18-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '07-25-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-01-2016', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-08-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-15-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-22-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '08-29-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-05-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-12-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-19-2016', 1, 
+    'A', 4300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '09-26-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-03-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-10-2016', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-17-2016', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-24-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '10-31-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-07-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-14-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-21-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '11-28-2016', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-05-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-12-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-19-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '12-26-2016', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-02-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-09-2017', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-16-2017', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-23-2017', 1, 
+    'A', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '01-30-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-06-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-13-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-20-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '02-27-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-06-2017', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-13-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-20-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '03-27-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-03-2017', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-10-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-17-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '04-24-2017', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'EDC', '05-01-2017', 1, 
+    'A', 600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-04-2015', 1, 
+    ' ', 2300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-11-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-18-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-25-2015', 1, 
+    ' ', 2300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-01-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-08-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-15-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-22-2015', 1, 
+    ' ', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-29-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-06-2015', 1, 
+    ' ', 2600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-13-2015', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-20-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-27-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-03-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-10-2015', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-17-2015', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-24-2015', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-31-2015', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-07-2015', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-14-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-21-2015', 1, 
+    ' ', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-28-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-05-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-12-2015', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-19-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-26-2015', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-02-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-09-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-16-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-23-2015', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-30-2015', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-07-2015', 1, 
+    ' ', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-14-2015', 1, 
+    ' ', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-21-2015', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-28-2015', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-04-2016', 1, 
+    ' ', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-11-2016', 1, 
+    ' ', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-18-2016', 1, 
+    ' ', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-25-2016', 1, 
+    ' ', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-01-2016', 1, 
+    ' ', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-08-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-15-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-22-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-29-2016', 1, 
+    ' ', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-07-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-14-2016', 1, 
+    ' ', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-21-2016', 1, 
+    ' ', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-28-2016', 1, 
+    ' ', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-04-2016', 1, 
+    ' ', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-11-2016', 1, 
+    ' ', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-18-2016', 1, 
+    ' ', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-25-2016', 1, 
+    ' ', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-02-2016', 1, 
+    ' ', 600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-02-2016', 1, 
+    'A', 2300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-09-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-16-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-23-2016', 1, 
+    'A', 2300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-30-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-06-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-13-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-20-2016', 1, 
+    'A', 3700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '06-27-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-04-2016', 1, 
+    'A', 2600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-11-2016', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-18-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '07-25-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-01-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-08-2016', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-15-2016', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-22-2016', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '08-29-2016', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-05-2016', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-12-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-19-2016', 1, 
+    'A', 4100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '09-26-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-03-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-10-2016', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-17-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-24-2016', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '10-31-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-07-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-14-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-21-2016', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '11-28-2016', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-05-2016', 1, 
+    'A', 3800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-12-2016', 1, 
+    'A', 3200, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-19-2016', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '12-26-2016', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-02-2017', 1, 
+    'A', 3500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-09-2017', 1, 
+    'A', 3900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-16-2017', 1, 
+    'A', 3100, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-23-2017', 1, 
+    'A', 4400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '01-30-2017', 1, 
+    'A', 3300, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-06-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-13-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-20-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '02-27-2017', 1, 
+    'A', 2900, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-06-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-13-2017', 1, 
+    'A', 4000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-20-2017', 1, 
+    'A', 3600, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '03-27-2017', 1, 
+    'A', 2700, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-03-2017', 1, 
+    'A', 2500, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-10-2017', 1, 
+    'A', 3000, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-17-2017', 1, 
+    'A', 2800, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '04-24-2017', 1, 
+    'A', 3400, 'POS', 10080);
+Insert into HIST
+   (DMDUNIT, DMDGROUP, LOC, STARTDATE, TYPE, 
+    EVENT, QTY, HISTSTREAM, DUR)
+ Values
+   ('ITEM-2003', 'ALL', 'WDC', '05-01-2017', 1, 
+    'A', 600, 'POS', 10080);
+COMMIT;

@@ -1,0 +1,42 @@
+mysql commands
+mysql --host=104.155.136.125 --user=root --password
+show databases;
+show tables;
+use guestbook;
+command to use in prompt
+mysql -u root -p
+
+
+
+gcloud compute copy-files ~/E:/misc/gcp/java-docs-samples-master/compute/forecast/target bitnami-wildfly-dm-3bd7 --zone us-central1-a
+
+
+first copy the local file to the storage of cloud and then copy the files from the storage to the deployment directory for app deployment.
+gsutil cp E:/misc/gcp/java-docs-samples-master/compute/forecast/target/fcstGen-1.0.0.war bitnami-wildfly-dm-3bd7:~/
+ls -l
+sudo rm fcst*.war*
+gsutil cp gs://javaee7batchframework.appspot.com/*war .
+mv fcstGen-1.0.0.war fcstgen.war
+mv fcstUI-1.0.0.war fcstui.war
+sudo cp *.war /opt/bitnami/wildfly/standalone/deployments
+ls /opt/bitnami/wildfly/standalone/deployments	
+
+getting the log file
+gsutil cp /opt/bitnami/wildfly/standalone/log/server.log gs://javaee7batchframework.appspot.com/server.log
+gsutil cp server.log gs://javaee7batchframework.appspot.com/server.log
+gsutil cp ./forecast.csv gs://javaee7batchframework.appspot.com/forecast.csv
+
+clear;
+sudo find . -name '*.xml'
+tail -500 server.log
+
+
+changing the permissions in the directory to create a file 
+sudo chmod -R wildfly:wildfly /opt/bitnami/wildfly/
+sudo touch results.csv
+
+GIT Commands
+git init
+git add forecast/*
+git remote add origin https://github.com/nnareshkumar/batchjob.git
+git push -u origin master

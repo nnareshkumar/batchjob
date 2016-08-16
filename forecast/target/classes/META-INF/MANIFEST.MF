@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: j1008526
+Created-By: Apache Maven 3.3.9
+Build-Jdk: 1.8.0_66
+Class-Path: forecast/WEB-INF/lib/ojdbc7.jar forecast/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar forecast/WEB-INF/lib/mae.jar forecast/WEB-INF/lib/mae_client.jar forecast/WEB-INF/lib/log4j-api-2.3.jar forecast/WEB-INF/lib/log4j-1.2.8.jar forecast/WEB-INF/lib/log4j-slf4j-impl-2.3.jar forecast/WEB-INF/lib/slf4j-api-1.7.12.jar forecast/WEB-INF/lib/slf4j-ext-1.7.12.jar  

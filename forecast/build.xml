@@ -1,0 +1,35 @@
+<project name="SCPOWeb" default="system" basedir=".">
+    <!-- allow accesss to the system environment variables -->
+    <property environment="env"/>
+	<property name="build.root.dir" value="${env.BUILD_ROOT}"/>
+	<property name="build.classes.dir" value="${build.root.dir}/target/classes"/>
+	<property name="build.source.dir" value="${build.root.dir}/src"/>
+	
+	<path id="base.path">
+		<pathelement path="${build.classes.dir};${build.source.dir}"/>
+        
+        <fileset dir="${build.root.dir}/src/main/webapp/WEB-INF/lib" includes="*.jar"/>
+		<fileset dir="E:/misc/gcp/java-docs-samples-master/compute/forecast/src/main/webapp/WEB-INF/lib" includes="*.jar"/>
+	</path>
+	
+	
+	<target name="system" >
+        <mkdir dir="${build.classes.dir}"/> 
+        <javac srcdir="${build.source.dir}" destdir="${build.classes.dir}"
+               deprecation="off" failonerror="true" debug="on">
+			<classpath>
+				<fileset dir="${build.root.dir}/src/main/webapp/WEB-INF/lib" includes="*.jar"/>
+				<fileset dir="E:/misc/gcp/java-docs-samples-master/compute/forecast/src/main/webapp/WEB-INF/lib" includes="*.jar"/>
+				<fileset dir="E:/misc/glassfish-4.1.1/glassfish4/glassfish/modules" includes="*.jar"/>
+			</classpath>
+			<include name="**/forecast/**/*.java"/>
+        </javac>
+		<echo message="{build.classes.dir}:${build.classes.dir}++++++++++"/>
+		<echo message="{build.classes.dir}:${build.classes.dir}/../fcstGen-1.0.0/WEB-INF/classes"/>
+
+		<copy todir="${build.classes.dir}/../fcstGen-1.0.0/WEB-INF/classes" failonerror="false">
+            <fileset dir="${build.classes.dir}" includes="*.class"/>
+        </copy>
+    </target>
+
+	</project>

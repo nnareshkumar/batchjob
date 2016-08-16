@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id="forecast" xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="1.0">
+    <properties>
+        <property name="results_file_name" value="/home/buranpur_laxman/temp/forecast.csv"/>
+        <property name="start_time" value="0"/>
+		<property name="log_file_name" value="log1.txt"/>
+    </properties>
+    <step id="forecastrecords" >
+        <chunk checkpoint-policy="item" item-count="10">
+            <reader ref="com.example.compute.forecast.RecordReader"></reader>
+            <processor ref="com.example.compute.forecast.RecordProcessor"></processor>
+            <writer ref="com.example.compute.forecast.RecordWriter"></writer>
+        </chunk>
+      <!--  <partition>
+            <mapper ref="RecordPartitionMapper"/>
+        </partition>
+        <end on="COMPLETED"/>-->
+    </step>
+</job>

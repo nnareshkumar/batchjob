@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Forecasting Algorithm</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/default.css" />
+    <script type="text/javascript" src="scripts/fusioncharts.js"></script>
+    <script type="text/javascript">
+
+    var jsonData;
+
+    function displayGraph() {
+
+        var request = new XMLHttpRequest();
+        request.open('GET', 'http://104.155.11.183/fcstgen/forecast/graph', true);  //"true" makes the request asynchronous
+                            //use the url for google cloud http://104.155.11.183/fcstgen/forecast/graph
+                            //http://localhost:8080/fcstGen-1.0.0/forecast/graph
+
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+                 jsonData = request.responseText;
+                 chartCall(jsonData);
+                }
+                else  {
+                    alert("failed");
+                }
+            }
+        };
+
+        request.send(null);
+
+    }
+
+    function forecastData() {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'http://104.155.11.183/fcstgen/forecast/data', true);  //"true" makes the request asynchronous
+        /*http://104.155.11.183/fcstgen/forecast/data*/
+
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+                    jsonData = request.responseText;
+                    document.getElementById("resultText").value=jsonData;
+                }
+                else {
+                    alert("failed");
+                }
+            }
+        };
+
+        request.send(null);
+
+    }
+
+    function chartCall(jsonData) {
+
+        FusionCharts.ready(function () {
+        var visitChart = new FusionCharts({
+            type: 'msline',
+            renderAt: 'chart-container',
+            width: '900',
+            height: '700',
+            dataFormat: 'json',
+            dataSource:  jsonData
+
+            }).render();
+          });
+    }
+
+    function forecastGen() {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'http://104.155.11.183/fcstgen/forecast/start', true);  //"true" makes the request asynchronous
+                        /*http://104.155.11.183/fcstgen/forecast/start*/
+
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+
+                 jsonData = request.responseText;
+
+                }
+                else
+                {
+                    alert("failed");
+                }
+            }
+        };
+
+        request.send(null);
+    }
+
+  </script>
+
+</head>
+    <body>
+        <form method="POST" action="upload" enctype="multipart/form-data" >
+            <p>
+                <h3>Upload the history for the product in the form of csv file</h3>
+                    File: 			<input type="file" name="file" id="file" />
+                    File directory:    <input type="text" value="/tmp" name="destination"/>
+                    <br><br>
+                <input type="submit" value="Upload" name="upload"  />
+
+            <br><br>
+
+                <h3>Click the button to generate the forecast</h3>
+                <input type="button" value="Generate Forecast" onclick="forecastGen();"/>
+                <h3>Graph for the batch run is displayed here</h3>
+                <input type="button" value="Display graph" onclick="displayGraph();"/>
+                <div id="chart-container">Forecasting algorithm</div><br>
+
+                <h3>Click the button to see the generated data</h3>   <input type="button" value="Forecast Data" onclick="forecastData();"/>
+                <div id="text-container">Forecasting Data
+                    <textarea id="resultText" cols="90" rows="25" value="" ></textarea>
+                </div><br>
+            </p>
+        </form>
+    </body>
+</html>
